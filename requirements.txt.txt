@@ -1,0 +1,24 @@
+# Dependencias principales para el entorno geoespacial y análisis de datos
+geopandas==1.0.1
+pandas==2.2.3
+numpy==2.1.1
+shapely==2.1.0
+pyproj==3.7.0
+h3==4.1.0
+sqlalchemy==2.0.30
+psycopg2==2.9.9
+geoalchemy2==0.15.2
+pyarrow==17.0.0
+fastparquet==2024.5.0
+
+# Análisis estadístico y clustering
+scikit-learn==1.5.1
+pysal==24.3
+scipy==1.14.1
+
+# Visualización
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Opcional: conexión y automatización
+jupyter==1.1.1

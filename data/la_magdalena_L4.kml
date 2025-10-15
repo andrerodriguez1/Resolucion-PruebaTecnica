@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="lote_4_perimetro" id="lote_4_perimetro">
+	<SimpleField name="timestamp" type="string"></SimpleField>
+	<SimpleField name="begin" type="string"></SimpleField>
+	<SimpleField name="end" type="string"></SimpleField>
+	<SimpleField name="altitudeMode" type="string"></SimpleField>
+	<SimpleField name="tessellate" type="int"></SimpleField>
+	<SimpleField name="extrude" type="int"></SimpleField>
+	<SimpleField name="visibility" type="int"></SimpleField>
+	<SimpleField name="drawOrder" type="int"></SimpleField>
+	<SimpleField name="icon" type="string"></SimpleField>
+</Schema>
+<Folder><name>lote_4_perimetro</name>
+  <Placemark>
+	<name>Lote 4</name>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#lote_4_perimetro">
+		<SimpleData name="tessellate">1</SimpleData>
+		<SimpleData name="extrude">0</SimpleData>
+		<SimpleData name="visibility">0</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-63.798611834247,-33.9819790346384,0 -63.798627870973,-33.9820320033907,0 -63.7988221266885,-33.982083958953,0 -63.7991056556754,-33.9821027060034,0 -63.7995657766414,-33.9821046535968,0 -63.7997730151453,-33.9820662119569,0 -63.7997982495475,-33.9819404036901,0 -63.8094160435913,-33.9818613949699,0 -63.8094108544039,-33.9935120545257,0 -63.7887493076681,-33.9936679584471,0 -63.7887621595964,-33.9934444466255,0 -63.7889051879363,-33.9886464945429,0 -63.78892982383,-33.9885194130069,0 -63.7889917460877,-33.9884131751748,0 -63.7890633854296,-33.988274654976,0 -63.7891246197371,-33.987738549284,0 -63.78908346516,-33.9873580290453,0 -63.788944404093,-33.9871664087485,0 -63.7890234901994,-33.9852121791377,0 -63.7890840998257,-33.982775481122,0 -63.789251217969,-33.9825458982982,0 -63.7896273827341,-33.9822989730672,0 -63.790012965514,-33.9820369872301,0 -63.798611834247,-33.9819790346384,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

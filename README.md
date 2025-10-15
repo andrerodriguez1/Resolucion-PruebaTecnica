@@ -39,7 +39,7 @@ Resolucion-PruebaTecnica/
 	|  	|- soy_performance_2019_2021_2023.parquet
 	|
 	├── notebooks/
-	|  	|- PruebaTécnica_RodriguezAndrea
+	|  	|- PruebaTécnica_RodriguezAndrea.ipynb
 	|   |- cargar_geoparquet.py
 	| 
 	├── outputs/
@@ -127,6 +127,7 @@ Geofísica y Científica de Datos
 📧 arodriguez8@hotmail.com
 
 📅 Octubre 2025
+
 
 
 

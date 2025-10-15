@@ -103,6 +103,13 @@ Al finalizar, los tres archivos estarán cargados en las tablas kml_layer, geopa
 
 ------------
 
+## 🗺️ Visualización en QGIS
+
+Se incluye el archivo `Prueba-RodriguezAndrea.qgz`, que contiene las capas cargadas desde la base PostGIS (Lote L4, Veris, Rendimiento, Clusters y Hotspots).  
+![Mapa QGIS - Lote L4 La Magdalena](outputs/mapa_qgis.png)
+
+----------
+
 ## 🌿 Bonus - Índice Espectral Sentinel-2
 En el informe técnico se incluye un planteo sobre el uso de índices espectrales (NDVI) derivados de Sentinel-2 para anticipar zonas de alto o bajo rendimiento, utilizando Google Earth Engine.
 
@@ -117,3 +124,4 @@ Geofísica y Científica de Datos
 📧 arodriguez8@hotmail.com
 
 📅 Octubre 2025
+

@@ -1,0 +1,17 @@
+# Archivos y carpetas del entorno Python/Conda
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# Archivos y carpetas generados por Conda
+geoenv/
+.ipynb_checkpoints/
+
+# Archivos de metadatos del Sistema Operativo
+.DS_Store
+
+# Archivos de Docker generados automáticamente
+# Se recomienda ignorar solo si no están definidos en docker-compose
+# Los volúmenes de datos persistentes. La carpeta .docker-data
+*.log

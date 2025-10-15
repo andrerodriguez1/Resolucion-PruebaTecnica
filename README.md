@@ -1,5 +1,5 @@
 # 🛰️ Desafío Práctico - Desarrollador de Datos Geoespaciales  
-**Candidata:** Geof. Andrea Rodríguez  
+**Candidata:** Geof. Andrea Rodriguez  
 **Empresa:** Garruchos Agropecuaria  
 **Fecha:** Octubre 2025  
 
@@ -127,6 +127,7 @@ Geofísica y Científica de Datos
 📧 arodriguez8@hotmail.com
 
 📅 Octubre 2025
+
 
 
 

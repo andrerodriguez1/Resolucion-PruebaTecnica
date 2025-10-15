@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  geodb:
+   # 1. Construye la imagen desde el Dockerfile en el directorio actual
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
+    # 2. Configura las variables de entorno para PostgreSQL
+    environment:
+      POSTGRES_USER: usergeo
+      POSTGRES_PASSWORD: 5659
+      POSTGRES_DB: geodatabase # La DB debe coincidir con la de init.sql
+    
+    # 3. Mapea el puerto de PostgreSQL (5432) al puerto 5432 del host
+    ports:
+      - "5432:5432"
+    
+    # 4. Define un volumen persistente para los datos de la base de datos
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+    # 5. Monta el directorio de datos para acceder a tus archivos
+      - ./data:/app/data
+    
+    container_name: postgis_h3_container
+
+volumes:
+  pgdata:
+   

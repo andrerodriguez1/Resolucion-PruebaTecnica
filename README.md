@@ -4,6 +4,8 @@
 **Fecha:** Octubre 2025  
 
 ---
+![Mapa QGIS - Lote L4 La Magdalena](outputs/mapa_qgis.png)
+---
 
 ## 📘 Introducción  
 Este proyecto corresponde al desafío práctico para la posición de **Desarrollador/a de Datos Geoespaciales**, cuyo objetivo es:  
@@ -106,7 +108,6 @@ Al finalizar, los tres archivos estarán cargados en las tablas kml_layer, geopa
 ## 🗺️ Visualización en QGIS
 
 Se incluye el archivo `Prueba-RodriguezAndrea.qgz`, que contiene las capas cargadas desde la base PostGIS (Lote L4, Veris, Rendimiento, Clusters y Hotspots).  
-![Mapa QGIS - Lote L4 La Magdalena](outputs/mapa_qgis.png)
 
 ----------
 
@@ -124,4 +125,5 @@ Geofísica y Científica de Datos
 📧 arodriguez8@hotmail.com
 
 📅 Octubre 2025
+
 

@@ -31,6 +31,7 @@ Resolucion-PruebaTecnica/
 	|- dockerfile
 	|- docker-compose.yml
 	|- init.sql
+	|- .gitignore
 	|
 	├── data/
 	|  	|- la_magdalena_L4.kml
@@ -126,6 +127,7 @@ Geofísica y Científica de Datos
 📧 arodriguez8@hotmail.com
 
 📅 Octubre 2025
+
 
 
 

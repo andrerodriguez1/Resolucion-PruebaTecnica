@@ -39,6 +39,7 @@ Resolucion-PruebaTecnica/
 	|
 	├── notebooks/
 	|  	|- PruebaTécnica_RodriguezAndrea
+	|   |- cargar_geoparquet.py
 	| 
 	├── outputs/
 	|  	|- clusters_rendimiento.gpkg
@@ -125,5 +126,6 @@ Geofísica y Científica de Datos
 📧 arodriguez8@hotmail.com
 
 📅 Octubre 2025
+
 
 

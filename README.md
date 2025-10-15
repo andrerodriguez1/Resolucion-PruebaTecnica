@@ -25,9 +25,9 @@ Este proyecto corresponde al desafío práctico para la posición de **Desarroll
 ## 🧩 Estructura del proyecto
 
 Resolucion-PruebaTecnica/
-	|
+	
 	|- dockerfile
-	|- docler-compose.yml
+	|- docker-compose.yml
 	|- init.sql
 	|
 	├── data/
@@ -57,32 +57,38 @@ Resolucion-PruebaTecnica/
    ```
 
 2. **Construir y levantar el contenedor**
-	
+	```bash
 	docker compose up -d --build 
-
+	```
+ 
 Esto construirá la imagen de Docker, compilará la extensión H3, y levantará el servicio PostGIS/H3 en el puerto 5432.
 
 3. **Verificar el contenedor activo** 
-
+	```bash
 	docker ps
-
+	```
+ 
 4. **Carga de Datos (KML, GPKG)** 
 
 Archivo kml:
+	```bash
 	docker exec postgis_h3_container ogr2ogr -f "PostgreSQL" "PG:host=localhost user=usergeo password=5659 dbname=geodatabase" /app/data/la_magdalena_L4.kml -nln kml_layer -overwrite
-
-Archivo gpkg:
-	docker exec postgis_h3_container ogr2ogr -f "PostgreSQL" "PG:host=localhost user=usergeo password=5659 dbname=geodatabase" /app/data/veris_data.gpkg -nln geopackage_layer -overwrite 
-
-5. **Carga del GeoParquet mediante Python (fuera del contenedor)** 
+	```
 	
-# Crear un nuevo entorno
+Archivo gpkg:
+	```bash
+	docker exec postgis_h3_container ogr2ogr -f "PostgreSQL" "PG:host=localhost user=usergeo password=5659 dbname=geodatabase" /app/data/veris_data.gpkg -nln geopackage_layer -overwrite 
+	```
+	
+5. **Carga del GeoParquet mediante Python (fuera del contenedor)** 
+
+	```bash
 	conda create -n geoenv python=3.11
 	conda activate geoenv
 	conda install --file requirements.txt
 	python cargar_geoparquet.py
-
-# Al finalizar, los tres archivos estarán cargados en las tablas kml_layer, geopackage_layer, y performance_parquet_layer.
+	```
+Al finalizar, los tres archivos estarán cargados en las tablas kml_layer, geopackage_layer, y performance_parquet_layer.
 
 -----------
 
@@ -93,7 +99,7 @@ Archivo gpkg:
 
 2. Ejecutar las celdas secuencialmente en Jupyter o Google Colab.
 
-3. Los resultados (correlaciones, clusters, hotspots) se guardan en la carpeta outputs/.
+3. Los resultados (correlaciones, clusters, hotspots) se guardan en la carpeta outputs.
 
 ------------
 
@@ -105,6 +111,9 @@ En el informe técnico se incluye un planteo sobre el uso de índices espectrale
 👩‍💻 Autora
 
 Andrea Rodríguez
+
 Geofísica y Científica de Datos
+
 📧 arodriguez8@hotmail.com
+
 📅 Octubre 2025
